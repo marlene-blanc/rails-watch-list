@@ -1,0 +1,12 @@
+<div>
+  <%= link_to "Back to Movie lists", lists_path %>
+
+</div>
+<div>
+  <p><strong>List</strong></p>
+  <ul class="list-group">
+    <% @list.lists.each do |list| %>
+      <li class="list-group-item"><%= list.content %></li>
+    <% end %>
+  </ul>
+</div>
